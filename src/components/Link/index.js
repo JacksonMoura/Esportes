@@ -1,9 +1,11 @@
-//import NextLink from "next/link";
+import NextLink from 'next/link'
 
-//export default function Link({children, href, ...props}) {
-//  return (
-//    <NextLink href={href} passHref> 
-//        <text as= "a" {...props}>{children}</text>     
-//        </NextLink>
-// );
-//}
+export default function Link({ children, href, ...props }) {
+  return (
+    <NextLink href={href} passHref>
+      <text as="a" {...props}>
+        {children}
+      </text>
+    </NextLink>
+  )
+}
